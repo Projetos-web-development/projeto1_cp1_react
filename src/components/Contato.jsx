@@ -1,6 +1,7 @@
-// src/components/Contato.jsx
+
 import React, { useState } from 'react';
 import '../estilo.css'; 
+import { handleValidation } from './Error'; 
 
 const Contato = () => {
   const [formData, setFormData] = useState({
@@ -8,8 +9,6 @@ const Contato = () => {
     email: '',
     mensagem: ''
   });
-
-  const [error, setError] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,22 +20,12 @@ const Contato = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-  
-    if (!formData.nome || !formData.email || !formData.mensagem) {
-      setError('Por favor, preencha todos os campos.');
-      return;
-    }
-
-   
-    setError('');
-    alert('Formulário enviado com sucesso!');
+    handleValidation(formData); 
   };
 
   return (
     <div className="contato">
       <h1>Contato</h1>
-      {error && <div className="error-message">{error}</div>}
       <form className="contato-form" onSubmit={handleSubmit}>
         <label htmlFor="nome">Nome:</label>
         <input type="text" id="nome" name="nome" value={formData.nome} onChange={handleChange} />
