@@ -1,0 +1,75 @@
+/* src/BaseSite.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+    --font-color1: #000;
+    --font-color2: #fff;
+    --font-color3: #00ffff;
+    --bg-color1: #110656;
+    --bg-color2: #f0aaf0;
+    --bg-color3: #00FF00;
+    --bg-color4: #DAA520;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color1);
+    color: var(--font-color2);
+}
+
+.header, .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color2);
+    font-size: 2rem;
+    border: 2px solid var(--font-color2);
+    width: 100%;
+    height: 60px;
+    background-color: var(--font-color1);
+}
+
+.footer {
+    font-size: 1rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 auto;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 70px 20px;
+    padding-bottom: 500px;
+    padding-top: 100px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    border: 2px solid var(--bg-color4);
+    background: var(--font-color2);
+    color: var(--bg-color1);
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.image {
+    width: 100%;
+    height: 150px;
+}
