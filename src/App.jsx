@@ -1,4 +1,4 @@
-// src/App.jsx
+
 import React, { useState } from 'react';
 import Home from './Home';
 import Contato from './components/Contato';
