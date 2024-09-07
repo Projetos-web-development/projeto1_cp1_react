@@ -1,6 +1,6 @@
-// src/BaseSite.jsx
+
 import React from 'react';
-import './BaseSite.css'; // Importa o arquivo CSS
+import './BaseSite.css';
 
 const BaseSite = () => {
   return (
