@@ -1,6 +1,6 @@
-// src/components/Error.jsx
+
 import React from 'react';
-import '../estilo.css'; // Importa o CSS
+import '../estilo.css';
 
 const Error = () => {
   return (

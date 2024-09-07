@@ -1,4 +1,4 @@
-// src/components/Sobre.jsx
+
 import React from 'react';
 import '../estilo.css'; 
 import sobreImagem from '/img/fiap.png';

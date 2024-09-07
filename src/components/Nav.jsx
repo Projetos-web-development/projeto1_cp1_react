@@ -1,6 +1,6 @@
-// src/Nav.jsx
 
-import '../estilo.css'; // Importa o CSS
+
+import '../estilo.css';
 
 const Nav = () => {
   return (
