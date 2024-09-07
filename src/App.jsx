@@ -4,6 +4,8 @@ import Home from './Home';
 import Contato from './components/Contato';
 import Sobre from './components/Sobre';
 import Error from './components/Error';
+import Nav from './components/Nav'; 
+import Footer from './components/Footer'; 
 
 const App = () => {
   const [page, setPage] = useState('home');
@@ -16,8 +18,6 @@ const App = () => {
         return <Contato />;
       case 'sobre':
         return <Sobre />;
-      case 'error':
-        return <Error />;
       default:
         return <Home />;
     }
@@ -25,22 +25,11 @@ const App = () => {
 
   return (
     <div>
-      <header className="header">
-        Loja de Esportes -     
-        <nav>
-          <a href="#home" onClick={() => setPage('home')}>Home</a> | 
-          <a href="#contato" onClick={() => setPage('contato')}>Contato</a> | 
-          <a href="#sobre" onClick={() => setPage('sobre')}>Sobre</a> | 
-          <a href="#error" onClick={() => setPage('error')}>Erro</a>
-        </nav>
-      </header>
+      <Nav setPage={setPage} />
       <main>
-      {renderPage()}
+        {renderPage()}
       </main>
-      <footer className="footer">
-        2024        
-
-      </footer>
+      <Footer />
     </div>
   );
 };
