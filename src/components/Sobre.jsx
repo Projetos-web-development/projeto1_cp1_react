@@ -5,7 +5,8 @@ import sobreImagem from '/img/fiap.png';
 
 const Sobre = () => {
   return (
-    <div>
+    
+    <div className="sobre">
       <h1>Sobre Nós</h1>
       <div className="image_sobre">
       <img src={sobreImagem} alt="Sobre Nós"  />
