@@ -8,9 +8,9 @@ import './estilo.css'; // Certifique-se de que o arquivo estilo.css está no mes
 const Home = () => {
   return (
     <div>
-      <Nav />
+
       <Produtos />
-      <Footer />
+
     </div>
   );
 };

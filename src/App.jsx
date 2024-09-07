@@ -1,15 +1,50 @@
 // src/App.jsx
-import React from 'react';
-import Home from './Home'; // Importa o componente Home
+import React, { useState } from 'react';
+import Home from './Home';
+import Contato from './components/Contato';
+import Sobre from './components/Sobre';
+import Error from './components/Error';
 
 const App = () => {
+  const [page, setPage] = useState('home');
+
+  const renderPage = () => {
+    switch (page) {
+      case 'home':
+        return <Home />;
+      case 'contato':
+        return <Contato />;
+      case 'sobre':
+        return <Sobre />;
+      case 'error':
+        return <Error />;
+      default:
+        return <Home />;
+    }
+  };
+
   return (
     <div>
-      <Home /> {/* Renderiza o componente Home */}
+      <header className="header">
+        Loja de Esportes -     
+        <nav>
+          <a href="#home" onClick={() => setPage('home')}>Home</a> | 
+          <a href="#contato" onClick={() => setPage('contato')}>Contato</a> | 
+          <a href="#sobre" onClick={() => setPage('sobre')}>Sobre</a> | 
+          <a href="#error" onClick={() => setPage('error')}>Erro</a>
+        </nav>
+      </header>
+      <main>
+      {renderPage()}
+      </main>
+      <footer className="footer">
+        Integrantes: <br />
+        Alexandre Silva de Faria - RM:558270
+        <br />
+        Renato Françoso Babichak - RM556942
+      </footer>
     </div>
   );
 };
 
 export default App;
-
-
