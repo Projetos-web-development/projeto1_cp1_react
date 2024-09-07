@@ -12,8 +12,7 @@ const Sobre = () => {
       <img src={sobreImagem} alt="Sobre Nós"  />
       </div>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus erat eget nulla luctus, ac volutpat elit gravida. Vestibulum aliquet, eros et facilisis faucibus, est libero vestibulum justo, sit amet ultrices metus elit sed felis. Integer consectetur, mi ut pretium dictum, libero lectus varius urna, eu tempor elit ligula vel sapien. Proin sit amet felis et tortor dictum aliquet. Fusce lacinia purus eget velit dignissim scelerisque. Morbi sollicitudin ligula non varius dignissim. Praesent nec facilisis metus, eget consectetur tortor. Aenean euismod, dui sit amet posuere cursus, justo eros tincidunt orci, a consequat nunc ligula sed lorem. Nulla facilisi. Vestibulum et consectetur urna. Curabitur auctor ex sed justo luctus, a feugiat erat tempor. Suspendisse potenti. Nulla at sollicitudin ligula.
-      </p>
+      Bem-vindo à Loja de Esportes, sua principal fonte para equipamentos e roupas esportivas de alta qualidade. Nosso catálogo inclui uma vasta gama de itens, desde roupas esportivas modernas e funcionais até acessórios essenciais para diversas modalidades esportivas.       </p>
     </div>
   );
 };
