@@ -1,4 +1,4 @@
-import '../estilo.css'; // Importa o CSS
+import '../estilo.css';
 
 const Produtos=()=> {
   return (
